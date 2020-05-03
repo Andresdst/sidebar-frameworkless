@@ -1,0 +1,48 @@
+/*1rem = 16px*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#sidebar {
+  position: fixed;
+  width: 12em;
+  height: 100%;
+  background: cadetblue;
+  left: -12rem;
+  transition: all 700ms;
+}
+
+#sidebar.active {
+  left: 0;
+}
+
+#sidebar ul li {
+  color: rgba(230, 230, 230, 0.9);
+  text-align: center;
+  padding: 1rem 0.9rem;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+}
+
+#sidebar .toggle-btn {
+  position: absolute;
+  left: 14rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+#sidebar .toggle-btn span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 25px;
+}
